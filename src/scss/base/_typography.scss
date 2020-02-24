@@ -5,10 +5,30 @@
   box-sizing: border-box;
 }
 
-li {
-  list-style: none;
+html {
+  // Makes the root element 10px so therefore it is easy to convert px to rem as 1rem is equal to 10px
+  font-size: 62.5%;
 }
 
-a {
-  text-decoration: none;
+body {
+  font-family: $ff-r;
+}
+
+h1 {
+  font-size: 6.4rem;
+  color: $bg-blue;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h2 span {
+  font-size: 1.8rem;
+  color: $dark-grey;
+  font-weight: $fw-l;
+}
+
+iframe {
+  border: 1px solid $black;
 }

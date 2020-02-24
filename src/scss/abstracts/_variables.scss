@@ -1,9 +1,17 @@
 // Font Family
-
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+$ff-r: 'Roboto';
 
 // Font Weights
-
-
+$fw-l: 300;
+$fw-n: 400;
+$fw-b: 700;
 
 // Colors
+$black: #000000;
+$white: #FFFFFF;
+$light-grey: #A4A2A2;
+$dark-grey: #6F6D6D;
+$bg-blue: #0088D7;
+$bg-grey: #FAFAFA;
+$bg-green: #7DB32D;
