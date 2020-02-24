@@ -4,6 +4,13 @@ main {
   grid-template-columns: repeat(5, auto);
   grid-template-rows: 120vh auto;
 
+  @include mq1200 {
+    grid-template-rows: 95vh auto;
+    section:first-child {
+      margin-left: 1em;
+    }
+  }
+
   section {
     margin-right: 5em;
     }
@@ -25,12 +32,23 @@ main {
   padding: 1.5em;
   line-height: 1.4;
 
+  @include mq800 {
+    grid-column: 1/3;
+  }
+
+  @include mq1200 {
+    grid-column: 1/4;
+  }
+
   a {
     color: $bg-blue;
   }
 
   p, li {
     font-size: 1.5rem;
+    @include mq1200 {
+      font-size: 1.8rem;
+    }
   }
 
   ul {

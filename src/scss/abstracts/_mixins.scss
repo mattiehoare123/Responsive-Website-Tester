@@ -1,0 +1,11 @@
+@mixin mq800($width: 840px) {
+  @media(min-width: $width) {
+    @content;
+  }
+}
+
+@mixin mq1200($width: 1200px) {
+  @media(min-width: $width) {
+    @content;
+  }
+}
