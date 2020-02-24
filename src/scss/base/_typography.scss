@@ -15,13 +15,15 @@ body {
 }
 
 h1 {
-  font-size: 6.4rem;
+  font-size: 5rem;
   color: $bg-blue;
+  font-weight: $fw-l;
 }
 
 h2 {
   font-size: 2.4rem;
   text-align: center;
+  margin: 2em 0 .2em;
 }
 
 h2 span {

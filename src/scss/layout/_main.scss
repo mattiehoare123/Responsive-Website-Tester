@@ -1,0 +1,44 @@
+main {
+  // All the iframes to be aligned in a row
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: 120vh auto;
+
+  section {
+    margin-right: 5em;
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+    }
+
+    svg {
+      width: 27px;
+      height: 20px;
+  }
+}
+
+.hiw {
+  grid-column: 1/2;
+  grid-row-start: 2;
+  padding: 1.5em;
+  line-height: 1.4;
+
+  a {
+    color: $bg-blue;
+  }
+
+  p, li {
+    font-size: 1.5rem;
+  }
+
+  ul {
+    margin-left: 2em;
+
+    li {
+      margin: 1em 0;
+    }
+  }
+
+}
