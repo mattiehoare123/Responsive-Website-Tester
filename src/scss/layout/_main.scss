@@ -59,3 +59,25 @@ main {
     }
   }
 }
+
+.iphone {
+  width: 677px;
+  height: 375px;
+}
+
+.google {
+  width: 823px;
+  height: 411px
+}
+
+.ipad {
+  width: 768px;
+  height: 1024px;
+}
+
+.rotatemobile {
+  transform: rotate(-90deg);
+  position: relative;
+  top: 150px;
+  right: 150px;
+}
