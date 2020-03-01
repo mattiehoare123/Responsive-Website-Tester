@@ -1,11 +1,11 @@
 main {
   // All the iframes to be aligned in a row
+  padding-top: 5em;
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-template-rows: 120vh auto;
 
   @include mq1200 {
-    grid-template-rows: 95vh auto;
     section:first-child {
       margin-left: 1em;
     }

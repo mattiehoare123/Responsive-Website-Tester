@@ -1,6 +1,8 @@
 header {
   background: $bg-blue;
   padding: 1.2em;
+  position: fixed;
+  width: 100%;
 
   @include mq1200 {
     display: flex;
