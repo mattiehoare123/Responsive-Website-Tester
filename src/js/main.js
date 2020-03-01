@@ -26,16 +26,19 @@ function rotate(a) {
     case 'iPhone':
         iPhone.classList.toggle('iphone');
         rotateMobile(iPhone);
+        swap();
         break;
 
     case 'google':
         google.classList.toggle('google');
         rotateMobile(google);
+        swap();
         break;
 
     case 'iPad':
         iPad.classList.toggle('ipad');
         rotateMobile(iPad);
+        swap();
         break;
   }
 }
@@ -53,4 +56,12 @@ function rotateMobile(a) {
        */
        a.classList.toggle('rotatemobile');
     }
+}
+
+
+function swap() {
+  for(var i = 0; i < 5; i++) {
+      var one = document.getElementsByClassName('width')[i];
+      one.classList.toggle('swap-width');
+  }
 }

@@ -59,6 +59,18 @@ main {
     }
   }
 }
+.w-h {
+  display: flex;
+  font-size: 1.4rem;
+  color: $dark-grey;
+  font-weight: $fw-l;
+}
+.width, .height {
+  margin: 0 .25em 0 .25em;
+}
+.swap-width{
+  order: 3;
+}
 
 .iphone {
   width: 677px;
@@ -74,7 +86,6 @@ main {
   width: 768px;
   height: 1024px;
 }
-
 .rotatemobile {
   transform: rotate(-90deg);
   position: relative;
