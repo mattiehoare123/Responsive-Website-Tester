@@ -25,43 +25,31 @@ function rotate(a) {
     */
     case 'iPhone':
         iPhone.classList.toggle('iphone');
-        rotateMobile(iPhone);
         swap();
         break;
 
     case 'google':
         google.classList.toggle('google');
-        rotateMobile(google);
         swap();
         break;
 
     case 'iPad':
         iPad.classList.toggle('ipad');
-        rotateMobile(iPad);
         swap();
         break;
   }
 }
 
-// Passing through the iframe ID from the rotate function
-function rotateMobile(a) {
-  // Media queires in javascript, if the screen is less than 450px run the statement
-   var mq = window.matchMedia( "(max-width: 450px)" );
-   // If the screen size matches
-    if (mq.matches) {
-      /*
-       Rotate the mobile 270 degrees when the user is viewing the site on a mobile
-       as roating the device on mobile version is not efficent so therefore to rotate
-       the screen instead
-       */
-       a.classList.toggle('rotatemobile');
-    }
-}
-
-
 function swap() {
-  for(var i = 0; i < 5; i++) {
+  for(var i = 0; i < 3; i++) {
       var one = document.getElementsByClassName('width')[i];
       one.classList.toggle('swap-width');
+  }
+}
+
+// When user presses enter to run the getInput function
+function enter(e) {
+  if(e.keyCode === 13) {
+    getInput();
   }
 }

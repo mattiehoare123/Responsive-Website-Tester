@@ -9,11 +9,11 @@
 </head>
 <body>
   <header>
-    <form>
+    <form onkeypress="enter(event)">
       <input id="url" placeholder="Enter your URL here "type="text" name="" value="">
       <button onclick="getInput()" type="button" name="button">GO</button>
     </form>
-    <p>How It Works</p>
+    <a href="index.html#jump">How It Works</a>
   </header>
   <main>
 
@@ -48,15 +48,21 @@
       <iframe id="iPad" class="website" src="" width="1024" height="768"></iframe>
     </section>
     <section>
-      <h2>Macbook Pro <span>1280x800</span></h2>
+      <div>
+        <h2>Macbook Pro</h2>
+        <p class="w-h">1280 800</p>
+      </div>
       <iframe class="website" src="" width="1280" height="800"></iframe>
     </section>
     <section>
-      <h2>Desktop <span>1680x1050</span></h2>
+      <div>
+        <h2>Desktop</h2>
+        <p class="w-h">1680 1050</p>
+      </div>
       <iframe class="website" src="" width="1680" height="1050"></iframe>
     </section>
     <!-- How it works -->
-    <section class="hiw">
+    <section class="hiw" id="jump">
       <h1>How It Works</h1>
       <p>Follow these steps to work the responsive website tester:</p>
       <ul>

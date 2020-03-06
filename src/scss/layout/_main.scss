@@ -3,7 +3,7 @@ main {
   padding-top: 5em;
   display: grid;
   grid-template-columns: repeat(5, auto);
-  grid-template-rows: 120vh auto;
+  grid-template-rows: 900px auto;
 
   @include mq1200 {
     section:first-child {
@@ -42,6 +42,9 @@ main {
 
   a {
     color: $bg-blue;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   p, li {
@@ -85,10 +88,4 @@ main {
 .ipad {
   width: 768px;
   height: 1024px;
-}
-.rotatemobile {
-  transform: rotate(-90deg);
-  position: relative;
-  top: 150px;
-  right: 150px;
 }

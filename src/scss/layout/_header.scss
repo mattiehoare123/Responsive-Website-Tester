@@ -8,16 +8,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.2em 5em;
+    padding: 1.2em;
   }
 
-  p {
+  a {
+    &:hover{
+      text-decoration: underline;
+    }
     display: none;
     @include mq1200  {
       display: block;
       color: $white;
       font-size: 2.5rem;
     }
+
   }
 
   form  {
@@ -30,15 +34,19 @@ header {
     }
       input {
         width: 70%;
-        padding: 1em;
-        border-radius: 1.5em;
+        padding: .4em;
+        border-radius: 1em;
         border: none;
+        font-size: 1.5rem;
+        @include mq1200 {
+          font-size: 2rem;
+        }
       }
       ::placeholder {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         color: $light-grey;
         @include mq1200 {
-          font-size: 2.5rem;
+          font-size: 2rem;
         }
       }
       button {
@@ -49,6 +57,11 @@ header {
         padding: .5em;
         border: none;
         margin-left: .8em;
+        cursor: pointer;
+
+        &:hover {
+          border: 1px solid #648e25;
+        }
       }
   }
 }
