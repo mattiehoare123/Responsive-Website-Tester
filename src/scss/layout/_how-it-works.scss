@@ -1,0 +1,34 @@
+.hiw {
+  h1 {
+    color: $bg-blue;
+    font-size: 3rem;
+    margin-bottom: .5em;
+  }
+  margin-top: 100px;
+  padding: 1.5em;
+  line-height: 1.4;
+  //To be inline with the main content
+  grid-column: 2/3;
+
+  a {
+    color: $bg-blue;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p, li {
+    font-size: 1.5rem;
+    @include mq1200 {
+      font-size: 1.8rem;
+    }
+  }
+
+  ul {
+    margin-left: 2em;
+
+    li {
+      margin: 1em 0;
+    }
+  }
+}

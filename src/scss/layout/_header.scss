@@ -1,8 +1,11 @@
 header {
   background: $bg-blue;
-  padding: 1.2em;
   position: fixed;
+  z-index: 2;
+  padding: 1.2em;
+  //Span full width of screen
   width: 100%;
+
 
   @include mq1200 {
     display: flex;
@@ -15,27 +18,25 @@ header {
     &:hover{
       text-decoration: underline;
     }
-    display: none;
+
     @include mq1200  {
       display: block;
       color: $white;
       font-size: 2.5rem;
     }
-
   }
 
+  //Input field
   form  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     @include mq1200 {
-      width: 80%;
+      width: 60vw;
       justify-content: flex-start;
+      align-items: center;
     }
       input {
-        width: 70%;
-        padding: .4em;
-        border-radius: 1em;
+        width: 50vw;
+        padding: .2em;
+        border-radius: .2em;
         border: none;
         font-size: 1.5rem;
         @include mq1200 {
@@ -51,16 +52,17 @@ header {
       }
       button {
         font-size: 1.8rem;
-        background: $bg-green;
         color: $white;
-        border-radius: 50%;
-        padding: .5em;
-        border: none;
+        border-radius: .1em;
+        background: none;
+        padding: .2em .7em;
+        border: 1px solid $white;
         margin-left: .8em;
         cursor: pointer;
 
         &:hover {
-          border: 1px solid #648e25;
+          background: $white;
+          color: $bg-blue;
         }
       }
   }

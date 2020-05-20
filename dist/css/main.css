@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Roboto"; }
+
+h1 {
+  color: #FFFFFF;
+  font-size: 2.2rem;
+  letter-spacing: 2px; }
+
+h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 1.5em .25em .2em; }
+
+a {
+  text-decoration: none; }
+
+header {
+  background: #0092F1;
+  position: fixed;
+  z-index: 2;
+  padding: 1.2em;
+  width: 100%; }
+  @media (min-width: 1200px) {
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2em; } }
+  header a:hover {
+    text-decoration: underline; }
+  @media (min-width: 1200px) {
+    header a {
+      display: block;
+      color: #FFFFFF;
+      font-size: 2.5rem; } }
+  @media (min-width: 1200px) {
+    header form {
+      width: 60vw;
+      justify-content: flex-start;
+      align-items: center; } }
+  header form input {
+    width: 50vw;
+    padding: .2em;
+    border-radius: .2em;
+    border: none;
+    font-size: 1.5rem; }
+    @media (min-width: 1200px) {
+      header form input {
+        font-size: 2rem; } }
+  header form ::placeholder {
+    font-size: 1.5rem;
+    color: #A4A2A2; }
+    @media (min-width: 1200px) {
+      header form ::placeholder {
+        font-size: 2rem; } }
+  header form button {
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    border-radius: .1em;
+    background: none;
+    padding: .2em .7em;
+    border: 1px solid #FFFFFF;
+    margin-left: .8em;
+    cursor: pointer; }
+    header form button:hover {
+      background: #FFFFFF;
+      color: #0092F1; }
+
+aside {
+  background: #F6F6F6;
+  margin-top: 60px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  z-index: 1; }
+  aside ul {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    height: 94vh; }
+    aside ul li {
+      cursor: pointer;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid #9F9F9F; }
+      aside ul li:hover {
+        background: #E0DEDE; }
+      aside ul li img {
+        justify-self: center;
+        width: 80px;
+        height: 80px; }
+      aside ul li p {
+        text-align: center;
+        font-size: 2rem; }
+        aside ul li p span {
+          font-size: 1.5rem; }
+
+main iframe {
+  border: 3em solid #ECECEC; }
+
+/*
+Containers to specify the width and height so no white space
+is left from scaling iframes
+*/
+.iPhone-container {
+  height: 340px;
+  width: 187px; }
+
+.google-container {
+  height: 400px;
+  width: 200px; }
+
+.ipad-container {
+  width: 350px;
+  height: 512px; }
+
+.macbook-container {
+  position: relative;
+  right: 100px;
+  width: 640px;
+  height: 400px; }
+
+.desktop-container {
+  position: relative;
+  right: 170px;
+  width: 840px;
+  height: 527px; }
+
+.iphone, .google, .ipad, .laptop, .desktop {
+  transform: scale(0.5); }
+
+.iphone iframe {
+  width: 375px;
+  height: 677px; }
+
+.google iframe {
+  width: 411px;
+  height: 823px; }
+
+.ipad iframe {
+  width: 700px;
+  height: 1024px; }
+
+.laptop iframe {
+  width: 1280px;
+  height: 800px; }
+
+.desktop iframe {
+  width: 1680px;
+  height: 1050px; }
+
+.hide {
+  display: none; }
+
+body {
+  display: grid;
+  grid-template-columns: 15vw auto;
+  grid-template-rows: 1fr auto 1fr 1fr;
+  height: 100%; }
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  bottom: 100px;
+  justify-content: center;
+  align-items: center; }
+  main section {
+    margin-right: 5em;
+    margin-bottom: 100px; }
+
+.hiw {
+  margin-top: 100px;
+  padding: 1.5em;
+  line-height: 1.4;
+  grid-column: 2/3; }
+  .hiw h1 {
+    color: #0092F1;
+    font-size: 3rem;
+    margin-bottom: .5em; }
+  .hiw a {
+    color: #0092F1; }
+    .hiw a:hover {
+      text-decoration: underline; }
+  .hiw p, .hiw li {
+    font-size: 1.5rem; }
+    @media (min-width: 1200px) {
+      .hiw p, .hiw li {
+        font-size: 1.8rem; } }
+  .hiw ul {
+    margin-left: 2em; }
+    .hiw ul li {
+      margin: 1em 0; }
+
+footer {
+  margin-top: 2em;
+  font-size: 1.2rem;
+  background: #ECECEC;
+  color: #000000;
+  text-align: center; }
+  @media (min-width: 1200px) {
+    footer {
+      font-size: 1.5rem; } }

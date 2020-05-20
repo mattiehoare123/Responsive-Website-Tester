@@ -1,0 +1,69 @@
+main {
+  iframe {
+    border: 3em solid $grey;
+  }
+}
+/*
+Containers to specify the width and height so no white space
+is left from scaling iframes
+*/
+.iPhone-container {
+  height: 340px;
+  width: 187px;
+}
+.google-container {
+  height: 400px;
+  width: 200px;
+}
+.ipad-container {
+  width: 350px;
+  height: 512px;
+}
+.macbook-container {
+  //Not in center so therefore moving it into middle
+  position: relative;
+  right: 100px;
+  width: 640px;
+  height: 400px;
+}
+.desktop-container{
+  //Not in center so therefore moving it into middle
+  position: relative;
+  right: 170px;
+  width: 840px;
+  height: 527px;
+}
+//Scaling the div that contains the iframe
+.iphone, .google, .ipad, .laptop, .desktop {
+  //Make the conaitner of device small
+  transform: scale(0.5);
+}
+//Size of the iframe sizes to represent device screens
+.iphone iframe {
+  width: 375px;
+  height: 677px;
+}
+
+.google iframe {
+  width: 411px;
+  height: 823px;
+}
+
+.ipad iframe {
+  width: 700px;
+  height: 1024px;
+}
+
+.laptop iframe {
+  width: 1280px;
+  height: 800px;
+}
+
+.desktop iframe {
+  width: 1680px;
+  height: 1050px;
+}
+//To hide device
+.hide {
+  display: none;
+}

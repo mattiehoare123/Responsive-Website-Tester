@@ -1,6 +1,8 @@
 footer {
   margin-top: 2em;
   font-size: 1.2rem;
+  background: $grey;
+  color: $black;
   @include mq1200 {
     font-size: 1.5rem;
   }
