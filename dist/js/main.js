@@ -1,1 +1,1 @@
-"use strict";function getInput(){for(var e=document.getElementById("url").value,t=0;t<5;t++)document.getElementsByClassName("website")[t].src=e}function hide(e){console.log(e),e.classList.toggle("hide")}
+"use strict";function getInput(){for(var e=document.getElementById("url").value,t=0;t<5;t++)document.getElementsByClassName("website")[t].src=e}function hide(e){e.classList.toggle("hide")}

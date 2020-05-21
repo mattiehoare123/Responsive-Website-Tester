@@ -12,7 +12,6 @@ function getInput() {
 }
 
 function hide(c) {
-  console.log(c)
   //Add the hide class to the id password through
   c.classList.toggle('hide');
 }

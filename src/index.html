@@ -6,6 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/main.css">
   <title>Responsive Website Tester</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
 </head>
 <body>
   <!-- Header -->
@@ -16,35 +20,34 @@
       <!-- On click pass the url to getInput function  -->
       <button onclick="getInput()" type="button" name="button">Test</button>
     </form>
-
     <a href="#jump">How It Works</a>
   </header>
   <!-- Aside -->
   <aside>
     <ul>
       <!-- Pass the iframe id, device name and the device container to the function  -->
-      <li onclick="hide(hideIphone)" class="change">
-        <img src="img/iphone.png" alt="" >
+      <li onclick="hide(hideIphone)">
+        <img src="img/iphone.png" alt="iPhone icon" >
         <p>iPhone 6/7/8</br>
         <span>375x677</span></p>
       </li>
       <li onclick="hide(hideGoogle)">
-        <img src="img/google.png" alt="">
+        <img src="img/google.png" alt="Google phone icon">
         <p>Google Pixel 2 XL</br>
         <span>411x823</span></p>
       </li>
-      <li onclick="hide(hideIpad)" class="change">
-        <img src="img/ipad.png" alt="">
+      <li onclick="hide(hideIpad)">
+        <img src="img/ipad.png" alt="iPad icon">
         <p>iPad</br>
         <span>1024x768</span></p>
       </li>
-      <li onclick="hide(hideMacbook)" class="change">
-        <img src="img/laptop.png" alt="">
+      <li onclick="hide(hideMacbook)">
+        <img src="img/laptop.png" alt="Macbook pro icon">
         <p>Macbook Pro</br>
         <span>1280x800</p>
       </li>
-      <li onclick="hide(hideDesktop)" class="change">
-        <img src="img/desktop.png" alt="">
+      <li onclick="hide(hideDesktop)">
+        <img src="img/desktop.png" alt="Desktop icon">
         <p>Desktop</br>
         <span>1680x1050</span></p>
       </li>
@@ -53,7 +56,7 @@
   <!-- Iframes/Devices -->
   <main>
   <!-- iPhone -->
-  <section id="hideIphone" class="iPhone-container">
+  <section id="hideIphone" class="iPhone-container animate__zoomOut">
     <div class="iphone">
       <iframe id="iPhone" class="website"></iframe>
     </div>

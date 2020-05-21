@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const uglify = require('gulp-uglify');
 const sass = require('gulp-sass');
 
-// Copy ALL HMTL files
+// Copy ALL HMTL files and move to dist folder
 gulp.task('copyHtml', async function() {
   gulp.src('src/*.html')
     .pipe(gulp.dest('dist'));
